@@ -20,7 +20,7 @@ RUN rm -rf $CATALINA_HOME/webapps/*
 
 # Copy WAR from your GitHub repo
 # IMPORTANT: make sure WAR file is in repo root OR adjust path
-COPY yourapp.war $CATALINA_HOME/webapps/ROOT.war
+COPY LoginApp.war $CATALINA_HOME/webapps/ROOT.war
 
 # Render uses dynamic port → use PORT env variable
 EXPOSE 8080
